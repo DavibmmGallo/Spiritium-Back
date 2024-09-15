@@ -47,7 +47,6 @@ def create_server(config):
     @app.post("/articles")
     def postArticle():
         data = request.json
-        del data['_id']
         data['release_date'] = datetime.now()
         article = Article.new(data)
         db.get_collection("articles").insert_one(asdict(article))

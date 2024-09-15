@@ -1,4 +1,4 @@
-FROM python:3.9 AS BUILD
+FROM python:3.10 AS BUILD
 
 WORKDIR /app
 COPY . /app

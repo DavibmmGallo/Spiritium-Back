@@ -28,7 +28,7 @@ class Article(MongoBase):
     author: str
     description: str
     release_date: datetime
-    text: str
+    text: list
 
 @dataclass
 class User(MongoBase):
